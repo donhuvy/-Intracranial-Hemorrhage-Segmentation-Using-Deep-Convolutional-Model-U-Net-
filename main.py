@@ -1,15 +1,10 @@
-import numpy as np, os, pickle, cv2, glob
-from imageio import imread
+import cv2
 from keras.callbacks import ModelCheckpoint
 from sklearn import metrics
-from imageio import imsave
-from pathlib import Path
 
-
-
-from prepare_data import *
 from data_process import *
 from model import *
+from prepare_data import *
 
 
 def Sens(y_true, y_pred):
